@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/M (4).png" style="border-radius: 20px;">
+    <title>Maroua Ouinkher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="header">
+            <ul>
+                <li id="img" style="margin-right:auto;">Maroua</li>
+                <div style="display: flex; flex: 1; justify-content: flex-end;">
+                    <li id="i1" onclick="scrollToSection('home')">Home</li>
+                    <li id="i2" onclick="scrollToSection('about')">About</li>
+                    <li id="i4" onclick="scrollToSection('skills')">Skills</li>
+                    <li id="i3" onclick="scrollToSection('projects')">Projects</li>
+                    <li id="i5" onclick="scrollToSection('contact')">Contact</li>
+                </div>
+            </ul>
+        </div>
+        
+        <!-- Home Section -->
+        <section id="home">
+            <div class="content">
+                <div class="image">
+                    <img src="images/images.png" alt="Maroua Ouinkher">
+                </div>
+                <div class="info">
+                    <h1>Hello, I'm<br>Maroua Ouinkher</h1>
+                    <h3>Web Developer</h3>
+                    <p>Engineering Student @ IGA, Interested in Web Development.</p>
+                    <div class="button-container">
+                        <a href="CV Maroua Ouinkher.pdf" download class="download-cv-btn" style="text-decoration:none;"><button>Download CV</button></a>
+                        <button onclick="scrollToSection('contact')">Contact Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="bg-animation">
+                <div class="bg-circle circle-1" style="left: 70%; top: 20%;"></div>
+                <div class="bg-circle circle-2" style="left: 10%; top: 60%;"></div>
+            </div>
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                        <p>I am a passionate web developer with expertise in creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to build intuitive and engaging user experiences.</p>
+                        <p>My journey in web development started several years ago, and since then I've worked with various technologies and frameworks to deliver high-quality solutions for clients across different industries.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing my knowledge through blogging and mentoring.</p>
+                   
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="bg-animation">
+                <div class="bg-circle circle-1" style="left: 80%; top: 70%;"></div>
+                <div class="bg-circle circle-3" style="left: 15%; top: 20%;"></div>
+            </div>
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Semantic markup, accessibility, and modern HTML5 features</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Responsive design, animations, and preprocessors like SASS</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-php"></i>
+                        <h3>PHP</h3>
+                        <p>Server-side scripting, WordPress development, and custom applications</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-laravel"></i>
+                        <h3>Laravel</h3>
+                        <p>MVC architecture, RESTful APIs, and Eloquent ORM</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <p>Component-based architecture, hooks, and state management</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-git-alt"></i>
+                        <h3>Git</h3>
+                        <p>Version control, branching strategies, and collaboration workflows</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                        <p>Object-oriented programming, Spring framework, and Android development</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <p>Scripting, data analysis, and Django web framework</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+        <div class="bg-animation">
+            <div class="bg-circle circle-2" style="left: 70%; top: 20%;"></div>
+            <div class="bg-circle circle-3" style="left: 20%; top: 70%;"></div>
+        </div>
+        <div class="container">
+            <h2>My Projects</h2>
+            
+            <div class="projects-scroll-wrapper">
+                <button class="scroll-arrow left" id="scrollLeft" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="projects-scroll-container" id="scrollContainer">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="images/protfiel.png" alt="Portfolio Project">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn github-btn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Portfolio</h3>
+                                <div class="tech-stack">HTML, CSS, JavaScript</div>
+                                <p>An elegant and modern portfolio showcasing my skills and projects with smooth animations and a responsive design.</p>
+                                <div class="project-footer">
+                                    <a href="#" class="github-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="images/siteweb.png" alt="E-commerce Site">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MAROUA1233/Projet_SiteE-commerce_avec_gatewaypaiment" class="project-link-btn github-btn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-commerce Site</h3>
+                                <div class="tech-stack">React, Laravel</div>
+                                <p>Complete e-commerce platform for local and artisanal products, with payment system, stock management, and admin interface.</p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/MAROUA1233/Projet_SiteE-commerce_avec_gatewaypaiment" class="github-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="images/website1.png" alt="Cosmetics Shop">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MAROUA1233/Projet_produitCosmetique" class="project-link-btn github-btn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Cosmetics Shop</h3>
+                                <div class="tech-stack">HTML, CSS, JavaScript, PHP</div>
+                                <p>E-commerce site specialized in natural cosmetic products with advanced filtering, customer reviews, and personalized recommendations.</p>
+                                <div class="project-footer">
+                                   <a href="https://github.com/MAROUA1233/Projet_produitCosmetique" class="github-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image-container">
+                                <img src="images/miniprojetnet.png" alt="Library Management">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://github.com/MAROUA1233/gestion_biblioth-" class="project-link-btn github-btn">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Library Management</h3>
+                                <div class="tech-stack">.NET</div>
+                                <p>Full desktop application for library management with loan tracking, user management, and catalog search.</p>
+                                <div class="project-footer">
+                                    <a href="https://github.com/MAROUA1233/gestion_biblioth-" class="github-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-arrow right" id="scrollRight">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+        
+        <!-- Contact Section - Style Élégant et Professionnel -->
+<section id="contact" class="contact">
+  <div class="bg-animation">
+    <div class="bg-circle circle-1" style="left: 10%; top: 20%;"></div>
+    <div class="bg-circle circle-2" style="left: 80%; top: 60%;"></div>
+  </div>
+
+  <h2>Contact Me</h2>
+  <div class="contact-content">
+    <!-- Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>Have questions about my services or want to discuss a project? I'd love to hear from you.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Phone</h4>
+            <p>+212 0760942691</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Email</h4>
+            <p>ouinkhermaroua@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-text">
+            <h4>Localisation</h4>
+            <p>Casablanca</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form">
+      <div class="form-header">
+        <h3>Send a Message</h3>
+        <p>Feel free to reach out for any questions or inquiries</p>
+      </div>
+
+      <!-- FORMULAIRE EmailJS -->
+      <form id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <div class="input-highlight"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <div class="input-highlight"></div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+          <div class="input-highlight"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          <div class="input-highlight"></div>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/2120760942691" target="_blank">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://github.com/MAROUA1233"><i class="fab fa-github"></i></a>
+                </div>
+                <p class="copyright">© 2023 Maroua Ouinkher. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 1s ease-in forwards';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe skill cards and project cards
+        document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+            card.style.opacity = '0';
+            observer.observe(card);
+        });
+        
+        // Animation des champs du formulaire
+        document.querySelectorAll('.form-group input, .form-group textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            
+            input.addEventListener('blur', function() {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+          // Sélection des éléments
+        const scrollContainer = document.getElementById('scrollContainer');
+        const scrollLeftBtn = document.getElementById('scrollLeft');
+        const scrollRightBtn = document.getElementById('scrollRight');
+        
+        // Gestion du défilement avec les flèches
+        scrollLeftBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: -350,
+                behavior: 'smooth'
+            });
+        });
+        
+        scrollRightBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({
+                left: 350,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Vérification de la position de défilement pour activer/désactiver les flèches
+        scrollContainer.addEventListener('scroll', () => {
+            // Désactiver la flèche gauche si on est au début
+            if (scrollContainer.scrollLeft === 0) {
+                scrollLeftBtn.disabled = true;
+            } else {
+                scrollLeftBtn.disabled = false;
+            }
+            
+            // Désactiver la flèche droite si on est à la fin
+            if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 10) {
+                scrollRightBtn.disabled = true;
+            } else {
+                scrollRightBtn.disabled = false;
+            }
+        });
+        
+        // Amélioration du défilement pour une expérience plus fluide
+        scrollContainer.addEventListener('wheel', (e) => {
+            if (e.deltaY !== 0) {
+                e.preventDefault();
+                scrollContainer.scrollLeft += e.deltaY;
+            }
+        });
+        
+        // Effet de glissement avec la souris
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        scrollContainer.addEventListener('mousedown', (e) => {
+            isDown = true;
+            startX = e.pageX - scrollContainer.offsetLeft;
+            scrollLeft = scrollContainer.scrollLeft;
+            scrollContainer.style.cursor = 'grabbing';
+        });
+        
+        scrollContainer.addEventListener('mouseleave', () => {
+            isDown = false;
+            scrollContainer.style.cursor = 'grab';
+        });
+        
+        scrollContainer.addEventListener('mouseup', () => {
+            isDown = false;
+            scrollContainer.style.cursor = 'grab';
+        });
+        
+        scrollContainer.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - scrollContainer.offsetLeft;
+            const walk = (x - startX) * 2;
+            scrollContainer.scrollLeft = scrollLeft - walk;
+        });
+        
+        // Vérification initiale de l'état des flèches
+        window.addEventListener('load', () => {
+            if (scrollContainer.scrollLeft === 0) {
+                scrollLeftBtn.disabled = true;
+            }
+            
+            if (scrollContainer.scrollWidth <= scrollContainer.clientWidth) {
+                scrollRightBtn.disabled = true;
+            }
+        });
+    </script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("KBcNou_6g6ebHr2iC"); // récupéré sur EmailJS
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.send("service_a2kvt0s","template_00by135", {
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    })
+    .then(function(response) {
+      alert("Message envoyé avec succès ✅");
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      alert("Erreur ❌ : " + JSON.stringify(error));
+    });
+  });
+</script>
+
+</body>
+</html>
